@@ -76,8 +76,9 @@ They also find that posting rates reduces the banks ability to price discriminat
 - The large banks operate nationally and post weekly prices that are common across the country
 
 Note:
-Big 8: 6 banks, a coop and a deposit-taking institution).
-low loan-to-value ratio  don´t require insurance
-high loan-to-vakue ratio require insurance
+Big 8: 6 banks, a coop and a deposit-taking institution).low loan-to-value ratio  don´t require insurancehigh loan-to-vakue ratio require insurance
+
+
+---
 
 
