@@ -94,3 +94,68 @@ Note:
 FSA means Forward Sortation Area and it is larger than a zipcode.  
 They restrict the contracts to those with homogenous terms: 25 year amortization period, 5 year fixed rate term, newly issued mortgages, individually negotitated (no broker), without missing values for key attributes.  
 Data provided by one of the insurers (CMHC) but they claim the contracts of the other insurer are similar.
+
+---
+
+### Mortgage data (Outcome variables)
+
+- With the data they construct:
+    - monthly payment: transaction interest rate, loan size and amortization period
+    - negotiated discounts: posted rate and transaction rate
+    - loyalty: dummy if consumer has dealt with said bank
+    
+    
+
+---
+
+### Market structure data
+
+- Market structure is described by the consumer base of each bank 
+- consumer base: share of day-to-day banking services (proxies for fraction of consumers that have experience with a bank)
+- They group the Ipsos-Reid data into:
+    - year/regions (10)
+    - income categories (4)
+- Estimate the probability that a consumer with characteristics $x_i$ chooses bank $h$, $\psi_h(x_i)$
+- Consumer choice set: banks within 10 Km of the centroid of the FSA (justified by data)
+    - $\mathcal{N}_i$ set of rival lenders (excluding home bank)
+    - $\n_i$ number of banks in $\mathcal{N}_i$
+
+
+
+Note: Ipsos-Reid data contains micro-data on 12,000 households.
+
+
+
+---
+
+### Canadian mortgage market (Summary statistics)
+
+Table 1 about right here
+
+
+
+---
+
+
+### Canadian mortgage market (5 key features)
+
+
+1. Mortgage rates are dispersed
+2. Loyal consumers and those living in concentrated markets pay more
+3. Consumers search more than they switch
+4. Consumers are more loyal in concentrated markets and to banks with larger networks
+5. Lenders with strong retail presence have larger market shares
+
+Notes:
+1. No dispersion on posted rates but lots on transaction rates (.61 R2)
+2. Discount for loyal consumer is 9.1 bps smaller than new clients. Discounts increase in number of lenders and decrease in relative size network
+3. 80% get a quote from their bank, 60% search and 28% switch away from their original isntitution
+
+
+---
+
+### Model
+
+
+
+
