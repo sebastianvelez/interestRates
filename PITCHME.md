@@ -56,7 +56,7 @@ They also find that posting rates reduces the banks ability to price discriminat
 
 ---
 
-## Sources of incumbency advantage
+### Sources of incumbency advantage
 
 - Banks with large consumer bases enjoy a 70% extra margins:
     - search costs account for 30%
@@ -78,4 +78,19 @@ They also find that posting rates reduces the banks ability to price discriminat
 Note:
 The Big 8 are 6 banks, 1 coop and a provincial deposit taking institution. Conventional contracts have low loan-to-value ratio and don't require insurance. High loan-to-value do require insurance. 
 
+---
 
+### Mortgage data
+
+- 10% random sample of insured contracts (1999-2002)
+- terms of contracts:
+    - transaction rate, loan size, house price, closing date
+- demographics of borrowers
+    - income, FICO score, loan-to-value ratio, house location (FSA)
+- They end up with 26,000 observations (1/3 of initial sample)
+    
+    
+Note:
+FSA means Forward Sortation Area and it is larger than a zipcode.
+They restrict the contracts to those with homogenous terms: 25 year amortization period, 5 year fixed rate term, newly issued mortgages, individually negotitated (no broker), without missing values for key attributes.
+Data provided by one of the insurers (CMHC) but they claim the contracts of the other insurer are similar.
