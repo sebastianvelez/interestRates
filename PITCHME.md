@@ -28,7 +28,20 @@ Note:
 
 ## Research questions
 
-1. What is the impact of *search frictions* on consumer welfare?
+1. What is the impact of search frictions on consumer welfare?
 2. What are the sources and magnitude of market power?
     + first-mover advantage arising from PD and search friction
     + loyalty advantage originating from long-term relationships
+    
+---
+
+## Approach
+
+Estimate a 2 stage model of demand and supply.
+
+- **First stage:** people get a quote from their usual banks and banks use their first quote to weed out high search-cost consumers.
+- **Second stage:** consumers pay a search cost and local banks compete via an English auction for the contract.
+
+
+
+
