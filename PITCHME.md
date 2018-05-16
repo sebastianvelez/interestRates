@@ -37,7 +37,7 @@ Note:
 
 ### Approach
 
--Estimate a 2 stage model of demand and supply:  
+- Estimate a 2 stage model of demand and supply:  
     - **First stage:** people get a quote from their usual banks and banks use their first quote to weed out high search-cost consumers.
     - **Second stage:** consumers pay a search cost and local banks compete via an English auction for the contract.
 
