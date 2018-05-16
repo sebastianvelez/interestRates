@@ -75,10 +75,6 @@ They also find that posting rates reduces the banks ability to price discriminat
 - 2 insurers, same guidelines:a premium ranging from 1.75% to 3.75% the value of the loans
 - The large banks operate nationally and post weekly prices that are common across the country
 
-Note:  
-Big 8: 6 banks, a coop and a deposit-taking institution.low loan-to-value ratio  don´t require insurancehigh loan-to-vakue ratio require insurance
 
-
----
 
 
