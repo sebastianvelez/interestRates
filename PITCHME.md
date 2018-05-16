@@ -3,7 +3,7 @@
 
 ---
 
-## Foreplay
+### Foreplay
 
 - **Negotiated-price markets**
     - Sellers post prices, but actual transaction prices are achieved via bargaining (cars, health insurance, capital assets, B2B)
@@ -14,7 +14,7 @@ Both things have implications for market power. **Search costs** lead to PD (fir
 
 ---
 
-## Foreplay (II)
+### Foreplay (II)
 
 - **Canadian mortgage market**  
 Administrative data on a large number of individually negotiated mortgage loans.
@@ -26,7 +26,7 @@ Note:
 
 --- 
 
-## Research questions
+### Research questions
 
 1. What is the impact of search frictions on consumer welfare?
 2. What are the sources and magnitude of market power?
@@ -35,16 +35,15 @@ Note:
     
 ---
 
-## Approach
+### Approach
 
-Estimate a 2 stage model of demand and supply.
-
-- **First stage:** people get a quote from their usual banks and banks use their first quote to weed out high search-cost consumers.
-- **Second stage:** consumers pay a search cost and local banks compete via an English auction for the contract.
+-Estimate a 2 stage model of demand and supply.
+    - **First stage:** people get a quote from their usual banks and banks use their first quote to weed out high search-cost consumers.
+    - **Second stage:** consumers pay a search cost and local banks compete via an English auction for the contract.
 
 --- 
 
-## Consumer surplus loss
+### Consumer surplus loss
 
 Counterfactual experiments eliminate search costs. Loss ($12/month) stems from 3 sources:
 - missallocation of buyers and sellers (12%)
@@ -70,11 +69,13 @@ They also find that posting rates reduces the banks ability to price discriminat
 
 - The Big 8 control 90% of the banking industry assets
 - 2 kinds of mortgage contracts:  
-    - conventional (uninsured)
-    - high loan-to-value ratio which require insurance  
+    - conventional
+    - high loan-to-value ratio 
 - 2 insurers, same guidelines:a premium ranging from 1.75% to 3.75% the value of the loans
 - The large banks operate nationally and post weekly prices that are common across the country
 
 
+Note:
+The Big 8 are 6 banks, 1 coop and a provincial deposit taking institution. Conventional contracts have low loan-to-value ratio and don't require insurance. High loan-to-value do require insurance. 
 
 
