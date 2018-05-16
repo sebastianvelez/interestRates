@@ -66,7 +66,7 @@ They also find that posting rates reduces the banks ability to price discriminat
     
 --- 
 
-## Institutional details
+### Institutional details
 
 - The Big 8 (6 banks, a coop and a deposit-taking institution) control 90% of the banking industry assets
 - 2 kinds of mortgage contracts:
