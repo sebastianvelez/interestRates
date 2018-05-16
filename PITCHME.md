@@ -68,11 +68,16 @@ They also find that posting rates reduces the banks ability to price discriminat
 
 ### Institutional details
 
-- The Big 8 (6 banks, a coop and a deposit-taking institution) control 90% of the banking industry assets
+- The Big 8 control 90% of the banking industry assets
 - 2 kinds of mortgage contracts:
     - conventional (uninsured)
     - high loan-to-value ratio which require insurance
-- 2 insurers, same guidelines:an insurance premium ranging from 1.75% to 3.75% fo the value of the loans
-- The large banks operate nationally an their head offices post weekly, prices that are common across the country
+- 2 insurers, same guidelines:a premium ranging from 1.75% to 3.75% the value of the loans
+- The large banks operate nationally and post weekly prices that are common across the country
+
+Note:
+Big 8: 6 banks, a coop and a deposit-taking institution).
+low loan-to-value ratio  don´t require insurance
+high loan-to-vakue ratio require insurance
 
 
