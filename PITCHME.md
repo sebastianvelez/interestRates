@@ -46,14 +46,33 @@ Estimate a 2 stage model of demand and supply.
 
 ## Consumer surplus loss
 
-Counterfactual experiments eliminate search costs. Loss ($12/month) stems from 3 sources
+Counterfactual experiments eliminate search costs. Loss ($12/month) stems from 3 sources:
 - missallocation of buyers and sellers (12%)
 - price discrimination (28%)
 - direct cost of gathering quotes (50%)
 
 
 Note:
-hey also find that posting rates reduces the banks ability to price discriminate, reducing the welfare cost of search frictions. Competition also amplifies the adverse effects of search frictions on consumer welfare.
+They also find that posting rates reduces the banks ability to price discriminate, reducing the welfare cost of search frictions. Competition also amplifies the adverse effects of search frictions on consumer welfare.
 
+---
+
+## Sources of incumbency advantage
+
+- Banks with large consumer bases enjoy a 70% extra margins:
+    - search costs account for 30%
+    - brand loyalty accounts for 50%
+    - 20% their interaction
+    
+--- 
+
+## Institutional details
+
+- The Big 8 (6 banks, a coop and a deposit-taking institution) control 90% of the banking industry assets
+- 2 kinds of mortgage contracts:
+    - conventional (uninsured)
+    - high loan-to-value ratio which require insurance
+- 2 insurers, same guidelines:an insurance premium ranging from 1.75% to 3.75% fo the value of the loans
+- The large banks operate nationally an their head offices post weekly, prices that are common across the country
 
 
