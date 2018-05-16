@@ -91,6 +91,6 @@ The Big 8 are 6 banks, 1 coop and a provincial deposit taking institution. Conve
     
     
 Note:
-FSA means Forward Sortation Area and it is larger than a zipcode.
-They restrict the contracts to those with homogenous terms: 25 year amortization period, 5 year fixed rate term, newly issued mortgages, individually negotitated (no broker), without missing values for key attributes.
+FSA means Forward Sortation Area and it is larger than a zipcode.  
+They restrict the contracts to those with homogenous terms: 25 year amortization period, 5 year fixed rate term, newly issued mortgages, individually negotitated (no broker), without missing values for key attributes.  
 Data provided by one of the insurers (CMHC) but they claim the contracts of the other insurer are similar.
