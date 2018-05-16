@@ -115,10 +115,10 @@ Data provided by one of the insurers (CMHC) but they claim the contracts of the 
 - They group the Ipsos-Reid data into:
     - year/regions (10)
     - income categories (4)
-- Estimate the probability that a consumer with characteristics $x_i$ chooses bank $h$, $\psi_h(x_i)$
+- Estimate the probability that a consumer with characteristics `$x_i$` chooses bank $h$, `$\psi_h(x_i)$`
 - Consumer choice set: banks within 10 Km of the centroid of the FSA (justified by data)
     - `$\mathcal{N}_i$` set of rival lenders (excluding home bank)
-    - $\n_i$ number of banks in `$\mathcal{N}_i$`
+    - `$\n_i$` number of banks in `$\mathcal{N}_i$`
 
 
 
@@ -145,6 +145,10 @@ Table 1 about right here
 3. Consumers search more than they switch
 4. Consumers are more loyal in concentrated markets and to banks with larger networks
 5. Lenders with strong retail presence have larger market shares
+
+
+
+
 
 Notes:
 1. No dispersion on posted rates but lots on transaction rates (.61 R2)
