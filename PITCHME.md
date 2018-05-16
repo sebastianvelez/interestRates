@@ -10,4 +10,21 @@
     - Key features: *search frictions* (cost of gather quotes), *loyatly advantage* (switching cost, complementarities, etc).
     
 Note:
-Both things have implications for market power. Search costs lead to PD (first seller has almost monopoly power if high costs of search) and brand loyalty reduces (bargaining because incumbents provide higher value thus lock-in happens)
+Both things have implications for market power. **Search costs** lead to PD (first seller has almost monopoly power if high costs of search) and **brand loyalty** reduces (bargaining because incumbents provide higher value thus lock-in happens). Together they imply that the firm with an extensive consumer base has an **incumbency advantage** over rival firms in the same market.
+
+
+## Foreplay (II)
+
+- **Canadian mortgage market**  
+Administrative data on a large number of individually negotiated mortgage loans.
+    - National lenders post common interest rates but branches have freedom to negotiate.
+    - Evidence of cost search and brand loyalty
+    
+Note:
+70% consumers combine day-to-day banking and mortgage services at the same institutions and 80% get a rate quote from this lender. Moreover, only 28% obtain a mortgage from a diferrent lender than their main institutions.
+
+
+## Research questions
+
+1. What is the impact of *search frictions* on consumer welfare?
+2. 
