@@ -22,7 +22,7 @@ Administrative data on a large number of individually negotiated mortgage loans.
     - Evidence of cost search and brand loyalty
     
 Note:
-70% consumers combine day-to-day banking and mortgage services at the same institutions and 80% get a rate quote from this lender. Moreover, only 28% obtain a mortgage from a diferrent lender than their main institutions.
+70% consumers combine day-to-day banking and mortgage services at the same institutions and 80% get a rate quote from this lender. Moreover, only 28% obtain a mortgage from a different lender than their main institutions.
 
 --- 
 
@@ -92,7 +92,7 @@ The Big 8 are 6 banks, 1 coop and a provincial deposit taking institution. Conve
     
 Note:
 FSA means Forward Sortation Area and it is larger than a zipcode.  
-They restrict the contracts to those with homogenous terms: 25 year amortization period, 5 year fixed rate term, newly issued mortgages, individually negotitated (no broker), without missing values for key attributes.  
+They restrict the contracts to those with homogeneous terms: 25 year amortization period, 5 year fixed rate term, newly issued mortgages, individually negotiated (no broker), without missing values for key attributes.  
 Data provided by one of the insurers (CMHC) but they claim the contracts of the other insurer are similar.
 
 ---
@@ -117,8 +117,8 @@ Data provided by one of the insurers (CMHC) but they claim the contracts of the 
     - income categories (4)
 - Estimate the probability that a consumer with characteristics $x_i$ chooses bank $h$, $\psi_h(x_i)$
 - Consumer choice set: banks within 10 Km of the centroid of the FSA (justified by data)
-    - $\mathcal{N}_i$ set of rival lenders (excluding home bank)
-    - $\n_i$ number of banks in $\mathcal{N}_i$
+    - `$\mathcal{N}_i$` set of rival lenders (excluding home bank)
+    - $\n_i$ number of banks in `$\mathcal{N}_i$`
 
 
 
@@ -149,7 +149,7 @@ Table 1 about right here
 Notes:
 1. No dispersion on posted rates but lots on transaction rates (.61 R2)
 2. Discount for loyal consumer is 9.1 bps smaller than new clients. Discounts increase in number of lenders and decrease in relative size network
-3. 80% get a quote from their bank, 60% search and 28% switch away from their original isntitution
+3. 80% get a quote from their bank, 60% search and 28% switch away from their original institution
 
 
 ---
