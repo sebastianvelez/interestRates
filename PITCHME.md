@@ -42,6 +42,18 @@ Estimate a 2 stage model of demand and supply.
 - **First stage:** people get a quote from their usual banks and banks use their first quote to weed out high search-cost consumers.
 - **Second stage:** consumers pay a search cost and local banks compete via an English auction for the contract.
 
+--- 
+
+## Consumer surplus loss
+
+Counterfactual experiments eliminate search costs. Loss ($12/month) stems from 3 sources
+- missallocation of buyers and sellers (12%)
+- price discrimination (28%)
+- direct cost of gathering quotes (50%)
+
+
+Note:
+hey also find that posting rates reduces the banks ability to price discriminate, reducing the welfare cost of search frictions. Competition also amplifies the adverse effects of search frictions on consumer welfare.
 
 
 
