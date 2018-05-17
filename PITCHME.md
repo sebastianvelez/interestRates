@@ -130,9 +130,7 @@ Note: Ipsos-Reid data contains micro-data on 12,000 households.
 
 ### Canadian mortgage market (Summary statistics)
 
-Table 1 about right here
-
-`$F_9$`
+Table 1 about right here $F_9$
 
 ---
 
