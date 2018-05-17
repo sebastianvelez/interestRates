@@ -171,7 +171,7 @@ where $\upsilon_j$ is the WTP for bank $j$, $p_j$ is a monthly payment.
 
 ### The Model: assumptions
 
-Consumers valuation
+- Consumers valuation
 
 `$$\upsilon_j =
 \begin{cases}
@@ -180,7 +180,7 @@ Consumers valuation
 \end{cases}
 $$`
 
-Banks cost of lending
+- Banks cost of lending
 
 `$$c_j = 
 \begin{cases}
@@ -188,3 +188,20 @@ c - \Delta, & \text{if } j=h \\
 c + \omega_j, & \text{if } j \ne h \\
 \end{cases}
 $$`
+
+Note:
+
+The idiosyncratic component is distributed $G()$ with $E(\omega_j)=0$. Lenders are constrained by a common posted price $\bar{p}$ which determines the reservation price of consumers($\bar{\upsilon}>\bar{p}$) and whether or not they qualify for a loan ($\bar{p}>c_j$)
+
+
+
+---
+
+### The game
+
+- **Stage 0:** consumers decide house, loan size, timing of purchase, etc.
+- **Stage 1:** lenders make an offer $p^0$ and consumers decide whether to accept or not
+    - State vector (common knowledge) : $s=(c,\lambda, \Delta, \bar{p}, n)$
+- **Stage 2:** English auction
+    - lenders learn their $\omega_j$
+
