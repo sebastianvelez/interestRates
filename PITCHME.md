@@ -245,8 +245,8 @@ Home bank wins in the first two cases. Other bank in the last 2.
 
 - The gain from searching is
 
-$$ \bar{\kappa}(p^0,s)=\bar{\upsilon}+\lambda[1-G_{(1)}(-\gamma)]+E[p^*|p^0,s]-[\bar{\upsilon} + \lambda - p^0]$$
-$$ \bar{\kappa}(p^0,s)=p^0 - E[p^*|p^0,s] - \lambda G_{(1)}(-\gamma)$$
+`$$\bar{\kappa}(p^0,s)=\bar{\upsilon}+\lambda[1-G_{(1)}(-\gamma)]+E[p^*|p^0,s]-[\bar{\upsilon} + \lambda - p^0]$$`
+$$\bar{\kappa}(p^0,s)=p^0 - E[p^*|p^0,s] - \lambda G_{(1)}(-\gamma)$$
 
 - A consumer will reject $p^0$ only if there is a net gain from searching
 
