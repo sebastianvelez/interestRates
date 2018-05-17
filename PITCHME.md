@@ -110,19 +110,17 @@ Data provided by one of the insurers (CMHC) but they claim the contracts of the 
 
 ### Market structure data
 
-- Market structure is described by the consumer base of each bank 
-- consumer base: share of day-to-day banking services (proxies for fraction of consumers that have experience with a bank)
-- They group the Ipsos-Reid data into:
-    - year/regions (10)
-    - income categories (4)
-- Estimate the probability that a consumer with characteristics `$x_i$` chooses bank $h$, `$\psi_h(x_i)$`
+- Consumer base: share of day-to-day banking services
+- They group the Ipsos-Reid data into year/regions (10) and income categories (4)
+- Estimate the probability that a consumer with characteristics $x_i$` chooses bank $h$, $\psi_h(x_i)$
 - Consumer choice set: banks within 10 Km of the centroid of the FSA (justified by data)
-`$\mathcal{N}_i$` set of rival lenders (excluding home bank)
-$\n_i$ number of banks in $\mathcal{N}_i$
+    - $\mathcal{N}_i$ set of rival lenders (excluding home bank)
+    - $\n_i$ number of banks in $\mathcal{N}_i$
 
 
 
-Note: Ipsos-Reid data contains micro-data on 12,000 households.
+Note:
+Ipsos-Reid data contains micro-data on 12,000 households. Consumer base proxies for fraction of consumers that have experience with a bank.
 
 
 
