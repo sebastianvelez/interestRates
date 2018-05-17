@@ -204,4 +204,36 @@ The idiosyncratic component is distributed $G()$ with $E(\omega_j)=0$. Lenders a
     - State vector (common knowledge) : $s=(c,\lambda, \Delta, \bar{p}, n)$
 - **Stage 2:** English auction
     - lenders learn their $\omega_j$
+    
+---
+
+### Competition stage
+
+2 cases, conditional on rejection of $p^0$
+
+- $\bar{p}<c-\Delta$ (the borrower doesn't qualify)
+    - The lowest qualifying bank wins with $p^* = \min\{ c+\omega_{(2)},\bar{p}\}$
+
+- $p^0 + \Delta < \bar{p} + \Delta$ (the borrower qualifies)
+    - the highest surplus bank wins and offer a quote that provides the same utility as the second best option
+    
+    
+    
+---
+
+### Competition stage (ctd)
+
+- The equilibrium pricing function is given by
+
+
+`$$p^* = 
+\begin{cases}
+p^0                      & \text{if } \bar{\upsilon} + \lambda - p^0 \ge \bar{\upsilon} - c - \omega_{(1)} \\
+c + \omega_{(1)}+\lambda & \text{if } \bar{\upsilon} + \lambda - p^0 < \bar{\upsilon} - c - \omega_{(1)} < \bar{\upsilon} - c -  \gamma \\
+c - \gamma               & \text{if } \bar{\upsilon} - c - \omega_{(1)} > \bar{\upsilon} - c -  \gamma >   \bar{\upsilon} - c - \omega_{(2)}\\
+c + \omega_{(2)}         & \text{if } \bar{\upsilon} - c - \omega_{(2)} > \bar{\upsilon} - c -  \gamma
+\end{cases}
+$$`
+
+
 
