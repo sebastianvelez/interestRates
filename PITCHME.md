@@ -173,18 +173,18 @@ where $\upsilon_j$ is the WTP for bank $j$, $p_j$ is a monthly payment.
 
 Consumers valuation
 
-$$\upsilon_j = 
+`$$\upsilon_j =
 \begin{cases}
 \bar{\upsilon} + \lambda, & \text{if } j=h \\
 \bar{\upsilon}, & \text{if else} \\
 \end{cases}
-$$
+$$`
 
 Banks cost of lending
 
-$$c_j = 
+`$$c_j = 
 \begin{cases}
 c - \Delta, & \text{if } j=h \\
 c + \omega_j, & \text{if } j \ne h \\
 \end{cases}
-$$
+$$`
