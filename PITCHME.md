@@ -166,6 +166,9 @@ where $\upsilon_j$ is the WTP for bank $j$, $p_j$ is a monthly payment.
 
 - Consumers incur a cost $\kappa > 0$ when getting quotes outside $h$ (independent of # of quotes)
 
+
+---
+
 ### The Model: assumptions
 
 Consumers valuation
