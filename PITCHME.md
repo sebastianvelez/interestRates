@@ -212,7 +212,7 @@ The idiosyncratic component is distributed $G()$ with $E(\omega_j)=0$. Lenders a
 2 cases, conditional on rejection of $p^0$
 
 - $\bar{p}<c-\Delta$ (the borrower doesn't qualify)
-    - The lowest qualifying bank wins with $p^* = \min\{ c+\omega_{(2)},\bar{p}\}$
+    - The lowest qualifying bank wins with `$p^* = \min\{ c+\omega_{(2)},\bar{p}\}$`
 
 - $p^0 + \Delta < \bar{p} + \Delta$ (the borrower qualifies)
     - the highest surplus bank wins and offer a quote that provides the same utility as the second best option
@@ -235,5 +235,38 @@ c + \omega_{(2)}         & \text{if } \bar{\upsilon} - c - \omega_{(2)} > \bar{\
 \end{cases}
 $$`
 
+Note:
+Home bank wins in the first two cases. Other bank in the last 2. 
 
+
+---
+
+### Search decision
+
+- The gain from searching is
+
+$$ \bar{\kappa}(p^0,s)=\bar{\upsilon}+\lambda[1-G_{(1)}(-\gamma)]+E[p^*|p^0,s]-[\bar{\upsilon} + \lambda - p^0]$$
+$$ \bar{\kappa}(p^0,s)=p^0 - E[p^*|p^0,s] - \lambda G_{(1)}(-\gamma)$$
+
+- A consumer will reject $p^0$ only if there is a net gain from searching
+
+$$Pr(\kappa < \bar{\kappa}(p^0,s))$$
+$$Pr(\kappa < p^0 - E[p^*|p^0,s] - \lambda G_{(1)}(-\gamma)) \equiv H(\bar{\kappa}(p^0,s))$$
+
+Note:
+Where $1-G_{(1)}(\gamma)$ is the retention probabilty of the home bank.
+
+
+
+---
+
+### Initial quote
+
+- Banks engage in PD by offering $p^0$ first to capture high-search cost consumers and then $p^*$ if it is rejected
+
+$$\max_{p^0 \le \bar{p}}(p^0-c+\Delta)[1-H(\bar{\kappa}(p^0,s))]+H(\bar{\kappa}(p^0,s))E(\pi^*_h|p^0,s)$$
+
+- The home bank will offer a quote only if it makes a profit at the posted price ($0<\bar{p}-c+\Delta$). The FOC is
+
+$$p^0 - c + \Delta = \frac{1-H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}+E(\pi^*_h|p^0,s)+ \frac{H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}\frac{\partial E(\pi^*_h|p^0,s)}{\partial p^0}$$
 
