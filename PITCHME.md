@@ -132,7 +132,7 @@ Note: Ipsos-Reid data contains micro-data on 12,000 households.
 
 Table 1 about right here
 
-$$F_9$$
+`$F_9$`
 
 ---
 
