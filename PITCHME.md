@@ -117,8 +117,8 @@ Data provided by one of the insurers (CMHC) but they claim the contracts of the 
     - income categories (4)
 - Estimate the probability that a consumer with characteristics `$x_i$` chooses bank $h$, `$\psi_h(x_i)$`
 - Consumer choice set: banks within 10 Km of the centroid of the FSA (justified by data)
-    - `$\mathcal{N}_i$` set of rival lenders (excluding home bank)
-    - `$\n_i$` number of banks in `$\mathcal{N}_i$`
+`$\mathcal{N}_i$` set of rival lenders (excluding home bank)
+$\n_i$ number of banks in $\mathcal{N}_i$
 
 
 
@@ -132,7 +132,7 @@ Note: Ipsos-Reid data contains micro-data on 12,000 households.
 
 Table 1 about right here
 
-
+$$F_9$$
 
 ---
 
