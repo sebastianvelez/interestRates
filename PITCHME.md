@@ -112,10 +112,10 @@ Data provided by one of the insurers (CMHC) but they claim the contracts of the 
 
 - Consumer base: share of day-to-day banking services
 - They group the Ipsos-Reid data into year/regions (10) and income categories (4)
-- Estimate the probability that a consumer with characteristics $x_i$` chooses bank $h$, $\psi_h(x_i)$
+- Estimate the probability that a consumer with characteristics $x_i$ chooses bank $h$, $\psi_h(x_i)$
 - Consumer choice set: banks within 10 Km of the centroid of the FSA (justified by data)
     - $\mathcal{N}_i$ set of rival lenders (excluding home bank)
-    - $\n_i$ number of banks in $\mathcal{N}_i$
+    - $n_i$ number of banks in $\mathcal{N}_i$
 
 
 
@@ -128,7 +128,7 @@ Ipsos-Reid data contains micro-data on 12,000 households. Consumer base proxies 
 
 ### Canadian mortgage market (Summary statistics)
 
-Table 1 about right here $F_9$
+Table 1 about right here 
 
 ---
 
@@ -146,7 +146,7 @@ Table 1 about right here $F_9$
 
 
 
-Notes:
+Note:
 1. No dispersion on posted rates but lots on transaction rates (.61 R2)
 2. Discount for loyal consumer is 9.1 bps smaller than new clients. Discounts increase in number of lenders and decrease in relative size network
 3. 80% get a quote from their bank, 60% search and 28% switch away from their original institution
@@ -154,8 +154,34 @@ Notes:
 
 ---
 
-### Model
+### The Model
 
+- Consumers make a discrete choice
 
+$$\max_{j \in \mathcal{J}}\upsilon_j - p_j$$
 
+where $\upsilon_j$ is the WTP for bank $j$, $p_j$ is a monthly payment.
 
+- Consumers get quotes from home bank ($n$) or one of the $n$ lenders in $\mathcal{N}$
+
+- Consumers incur a cost $\kappa > 0$ when getting quotes outside $h$ (independent of # of quotes)
+
+### The Model: assumptions
+
+Consumers valuation
+
+$$\upsilon_j = 
+\begin{cases}
+\bar{\upsilon} + \lambda, & \text{if } j=h \\
+\bar{\upsilon}, & \text{if else} \\
+\end{cases}
+$$
+
+Banks cost of lending
+
+$$c_j = 
+\begin{cases}
+c - \Delta, & \text{if } j=h \\
+c + \omega_j, & \text{if } j \ne h \\
+\end{cases}
+$$
