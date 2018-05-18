@@ -244,7 +244,6 @@ Home bank wins in the first two cases. Other bank in the last 2.
 ### Search decision
 
 - The gain from searching is
-
 `$$\bar{\kappa}(p^0,s)=\bar{\upsilon}+\lambda[1-G_{(1)}(-\gamma)]+E[p^*|p^0,s]-[\bar{\upsilon} + \lambda - p^0]$$`
 $$\bar{\kappa}(p^0,s)=p^0 - E[p^*|p^0,s] - \lambda G_{(1)}(-\gamma)$$
 
@@ -268,7 +267,7 @@ $$\max_{p^0 \le \bar{p}}(p^0-c+\Delta)[1-H(\bar{\kappa}(p^0,s))]+H(\bar{\kappa}(
 
 - The home bank will offer a quote only if it makes a profit at the posted price ($0<\bar{p}-c+\Delta$). The FOC is
 
-$$p^0 - c + \Delta = \frac{1-H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}+E(\pi^*_h|p^0,s)+ \frac{H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}\frac{\partial E(\pi^*_h|p^0,s)}{\partial p^0}$$
+`$$p^0 - c + \Delta = \frac{1-H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}+E(\pi^*_h|p^0,s)+ \frac{H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}\frac{\partial E(\pi^*_h|p^0,s)}{\partial p^0}$$`
 
 
 Note:
