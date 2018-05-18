@@ -270,3 +270,6 @@ $$\max_{p^0 \le \bar{p}}(p^0-c+\Delta)[1-H(\bar{\kappa}(p^0,s))]+H(\bar{\kappa}(
 
 $$p^0 - c + \Delta = \frac{1-H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}+E(\pi^*_h|p^0,s)+ \frac{H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}\frac{\partial E(\pi^*_h|p^0,s)}{\partial p^0}$$
 
+
+Note:
+There are 3 sources of profit: 1) search costs, 2) cost and quality differentiation, 3) reserve price effect. And the initial quote is additive in c in the interior. 
