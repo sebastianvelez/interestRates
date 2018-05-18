@@ -252,7 +252,10 @@ $$\bar{\kappa}(p^0,s)=p^0 - E[p^*|p^0,s] - \lambda G_{(1)}(-\gamma)$$
 $$Pr(\kappa < \bar{\kappa}(p^0,s))$$
 $$Pr(\kappa < p^0 - E[p^*|p^0,s] - \lambda G_{(1)}(-\gamma)) \equiv H(\bar{\kappa}(p^0,s))$$
 
+
+
 Note:
+
 Where $1-G_{(1)}(\gamma)$ is the retention probabilty of the home bank.
 
 
@@ -267,8 +270,11 @@ $$\max_{p^0 \le \bar{p}}(p^0-c+\Delta)[1-H(\bar{\kappa}(p^0,s))]+H(\bar{\kappa}(
 
 - The home bank will offer a quote only if it makes a profit at the posted price ($0<\bar{p}-c+\Delta$). The FOC is
 
-`$$p^0 - c + \Delta = \frac{1-H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}+E(\pi^*_h|p^0,s)+ \frac{H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}\frac{\partial E(\pi^*_h|p^0,s)}{\partial p^0}$$`
+`$$p^0 - c + \Delta = \frac{1-H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}+E(\pi^*_h|p^0,s)+\frac{H(\bar{\kappa}(p^0,s))}{H'(\bar{\kappa}(p^0,s))\kappa_{p^0}(p^0,s)}\frac{\partial E(\pi^*_h|p^0,s)}{\partial p^0}$$`
 
 
-Note:
+
+Note:  
+
 There are 3 sources of profit: 1) search costs, 2) cost and quality differentiation, 3) reserve price effect. And the initial quote is additive in c in the interior. 
+---
