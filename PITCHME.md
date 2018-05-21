@@ -128,7 +128,7 @@ Ipsos-Reid data contains micro-data on 12,000 households. Consumer base proxies 
 
 ### Canadian mortgage market (Summary statistics)
 
-Table 1 about right here 
+![](https://i.imgur.com/UDggSos.png)
 
 ---
 
@@ -276,5 +276,16 @@ $$\max_{p^0 \le \bar{p}}(p^0-c+\Delta)[1-H(\bar{\kappa}(p^0,s))]+H(\bar{\kappa}(
 
 Note:  
 
-There are 3 sources of profit: 1) search costs, 2) cost and quality differentiation, 3) reserve price effect. And the initial quote is additive in c in the interior. 
+There are 3 sources of profit: 1) search costs, 2) cost and quality differentiation, 3) reserve price effect. And the initial quote is additive in c in the interior. They have proofs on that and the corollary tha follows
+
+
+
 ---
+
+### Identification
+
+1. Distribution of prices  for switchers (no selection bias,posted price are not binding)
+    + markets with different $n$ identify $F(c_i|x_i)$, $G(\omega_i)$ and $(\gamma=\Delta + \lambda)$
+    + 
+
+
