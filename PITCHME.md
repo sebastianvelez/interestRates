@@ -331,7 +331,7 @@ $$\max_\theta \sum_i \text{log} L(p_i, b_i|\mathcal{I}_i,\theta)-m(\theta)^T\hat
 - Cost of lending: `$c_{ij}=L_i \times (c_i,\omega_{ij})$`
 
 - Cost of lending (home bank): `$c_{i,h(i)}=L_i \times (c_i,\Delta_{i,h(i)})$`
-    - $\Delta_{i,h(i)}=\xi_{i,h(i)}-\Delta(z_i^2)$
+    - `$\Delta_{i,h(i)}=\xi_{i,h(i)}-\Delta(z_i^2)$`
     
 
 --- 
@@ -339,8 +339,8 @@ $$\max_\theta \sum_i \text{log} L(p_i, b_i|\mathcal{I}_i,\theta)-m(\theta)^T\hat
 ### Functional forms
 
 - Cost advantage and WTP are modeled as functions of observables
-    - $\Delta(z_i^2)=L_i \times (\Delta_0 + \Delta_{inc}\text{Income}_i+ \Delta_{owner}\text{Previous Owner}_i)$
-    - $\lambda(z_i^2)=L_i \times (\lambda + \lambda{inc}\text{Income}_i+ \lambda{owner}\text{Previous Owner}_i)$
+    - `$\Delta(z_i^2)=L_i \times (\Delta_0 + \Delta_{inc}\text{Income}_i+ \Delta_{owner}\text{Previous Owner}_i)$`
+    - `$\lambda(z_i^2)=L_i \times (\lambda + \lambda{inc}\text{Income}_i+ \lambda{owner}\text{Previous Owner}_i)$`
     
 Similary for the search cost distribution
 
