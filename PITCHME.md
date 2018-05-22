@@ -308,10 +308,40 @@ Not enough variation
 
 
 Note:
-1. No problem observing just switchers because as prices go up transactions are generated in the auction state. Markets with different $n$ can be used to identify separately $F(c_i|x_i)$,  $G(\omega_i)$ and $\gamma=\Delta+\lambda$. For instance if n=2, $p_i^* = c_i+\gamma$ from where  $F(c_i|x_i)$ can be identified given $\gamma$. For small numbers $n >2$ given the high loyalty, switchers parice reflects mostly cost (which is independent of $c$). For large numbers the correlation between the number of rivals and price paid by switchers depens on the loyalty parameter. Really large n arguments are just English auction. 
+1. No problem observing just switchers because as prices go up transactions are generated in the auction state. Markets with different $n$ can be used to identify separately $F(c_i|x_i)$,  $G(\omega_i)$ and $\gamma=\Delta+\lambda$. For instance if n=2, $p_i^* = c_i+\gamma$ from where  $F(c_i|x_i)$ can be identified given $\gamma$. For small numbers $n >2$ given the high loyalty, switchers parice reflects mostly cost (which is independent of $c$). For large numbers the correlation between the number of rivals and price paid by switchers depends on the loyalty parameter. Really large n arguments are just English auction. 
 2. $\lambda$ and $\gamma$ have different effects on average transaction price for loyal consumers but the same for probability of search in the interior and distribution of price for switchers.
 
 
+---
+
 ### Estimation
+
+- Quasi-likelihood estimator
+    - aggregate likelihood: $L(p_i,b_i|\mathcal{I}, \theta)$
+    - additional information on search effort: $m(\theta)_{K\times1}$
+    
+- The estimator solves
+
+$$\max_\theta \sum_i \text{log} L(p_i, b_i|\mathcal{I}_i,\theta)-m(\theta)^T\hat{W}_2m(\theta)$$
+
+--- 
+
+### Functional forms
+
+- Cost of lending: $c_{ij}=L_i \times (c_i,\omega_{ij})$
+
+- Cost of lending (home bank): $c_{i,h(i)}=L_i \times (c_i,\Delta_{i,h(i)})$
+    - $\Delta_{i,h(i)}=\xi_{i,h(i)}-\Delta(z_i^2)$
+    
+- Cost advantage and WTP are modeled as functions of observables
+    - $\Delta(z_i^2)=L_i \times (\Delta_0 + \Delta_{inc}\text{Income}_i+ \Delta_{owner}\text{Previous Owner}_i)$
+    - $\lambda(z_i^2)=L_i \times (\lambda + \lambda{inc}\text{Income}_i+ \lambda{owner}\text{Previous Owner}_i)$
+    
+Similary for the search cost distribution
+
+
+---
+
+### Results
 
 
