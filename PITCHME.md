@@ -133,6 +133,8 @@ Ipsos-Reid data contains micro-data on 12,000 households. Consumer base proxies 
 ---
 
 
+
+
 ### Canadian mortgage market (5 key features)
 
 
@@ -282,10 +284,34 @@ There are 3 sources of profit: 1) search costs, 2) cost and quality differentiat
 
 ---
 
-### Identification
+### Identification: observed outcomes
 
-1. Distribution of prices  for switchers (no selection bias,posted price are not binding)
-    + markets with different $n$ identify $F(c_i|x_i)$, $G(\omega_i)$ and $(\gamma=\Delta + \lambda)$
-    + 
+1. Distribution of prices for loyals is a function of prices coming from searchers and non searchers
+2. Distribution of prices for switchers depends only on the outcome of the auction
+3. The switchin probability is a combo of
+    + consumers rejecting initial offer
+    + banks losing the auction
+
+---
+    
+### Identification 
+
+- Distribution of prices for switchers (*Identification at infintiy*)
+    + $c_i$ and $\gamma=\lambda + \delta$
+- Distribution of prices for loyals (*Corollary 1*)
+    + $\lambda$ and $\delta$
+- Empirical probability of remaining loyal
+    + $\kappa$
+    
+Not enough variation
+
+
+
+Note:
+1. No problem observing just switchers because as prices go up transactions are generated in the auction state. Markets with different $n$ can be used to identify separately $F(c_i|x_i)$,  $G(\omega_i)$ and $\gamma=\Delta+\lambda$. For instance if n=2, $p_i^* = c_i+\gamma$ from where  $F(c_i|x_i)$ can be identified given $\gamma$. For small numbers $n >2$ given the high loyalty, switchers parice reflects mostly cost (which is independent of $c$). For large numbers the correlation between the number of rivals and price paid by switchers depens on the loyalty parameter. Really large n arguments are just English auction. 
+2. $\lambda$ and $\gamma$ have different effects on average transaction price for loyal consumers but the same for probability of search in the interior and distribution of price for switchers.
+
+
+### Estimation
 
 
