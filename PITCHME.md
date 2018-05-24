@@ -363,12 +363,9 @@ All specifications imply that the home bank is more likely to win. But have diff
 
 ### Results: cost of lending
 
-- The estimate on $\sigma_\omega$, 0.102 has implications for $c_{(1)} - c_{(2)}$ depending on market structure
-    - $20 for duopoly
-    - $17 for 3 lenders
-    - approaches \$14 when 11 lenders
+- The estimate on `$\sigma_\omega$`, 0.102 has implications for `$c_{(1)} - c_{(2)}$` depending on market structure: $20 for duopoly, $17 for 3 lenders and approaches $14 when 11 lenders
     
-- markets- power also arises from bank fixed effects, network size and home-bank cost advantage
+- markets power also arises from bank fixed effects, network size and home-bank cost advantage
     - $12 a month cost-advantage for a bank with 3 branches
 
 
@@ -382,13 +379,26 @@ Consistent with notion that lending cost function captures complementarity betwe
 ### Results: cost advantage ($\Delta_i$)
 
 
-
-- Estimated to be \$17 for a \$100K loan
+- Estimated to be $17 for a $100K loan
 - Confers the home bank a huge advantage (51% probability of being cheaper then the most efficient lender in $\mathcal{N}_i$)
 
 
 
+--- 
 
+### Search cost distribution
+
+- Search costs are increasing in income and prior-onwership status
+
+- New home-buyers have lower search costs and a 1% increase in income leads to a 0.4% increase in search cost.
+
+- Substantial difference between searchers and non-searchers: $549 and $2300
+
+
+Note:
+Consistent with the interpretation of costs depending on cost time of collecting multiple quotes.
+
+Search costs sound like a lot but the represent just 2.5% of the cost of the contract (but are in general much lower than those in search literature)
 
 
 
