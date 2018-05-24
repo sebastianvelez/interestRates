@@ -346,6 +346,50 @@ Similary for the search cost distribution
 
 ---
 
-### Results
+### Results: general
+
+
+- All specifications imply home bank is more likely to win
+    - WTP model implies larger price difference between loyals and switchers
+    - Cost-advantage models leads to larger estimates for differentiation parameters $\Delta$, $\sigma_\omega$
+    - specification (3) used to solve the tie
+
+
+Note:
+
+All specifications imply that the home bank is more likely to win. But have different implications for the priced of loyals and switchers
+
+---
+
+### Results: cost of lending
+
+- The estimate on $\sigma_\omega$, 0.102 has implications for $c_{(1)} - c_{(2)}$ depending on market structure
+    - $20 for duopoly
+    - $17 for 3 lenders
+    - approaches \$14 when 11 lenders
+    
+- markets- power also arises from bank fixed effects, network size and home-bank cost advantage
+    - $12 a month cost-advantage for a bank with 3 branches
+
+
+Note:
+
+Consistent with notion that lending cost function captures complementarity between services that are increasing in size.
+
+
+---
+
+### Results: cost advantage ($\Delta_i$)
+
+
+
+- Estimated to be \$17 for a \$100K loan
+- Confers the home bank a huge advantage (51% probability of being cheaper then the most efficient lender in $\mathcal{N}_i$)
+
+
+
+
+
+
 
 
