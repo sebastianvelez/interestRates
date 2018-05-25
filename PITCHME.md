@@ -401,5 +401,28 @@ Consistent with the interpretation of costs depending on cost time of collecting
 Search costs sound like a lot but the represent just 2.5% of the cost of the contract (but are in general much lower than those in search literature)
 
 
+----
+
+### Counterfactuals: Search cost or market power
+
+- Use the model to quanitfy the effect of either in consumer surplus and firms profits
+- Compute equilibrium without search costs
+    + direct burden of searching quoutes
+    + misallocation
+    + price discrimination
+
+- Compute equilibrium without incumbency advantage
+
+
+---
+
+### Counterfactuals: no search costs
+
+$$\begin{align}
+\Delta CS_i & = \underbrace{\hat{\upsilon}-p_i-1(\kappa_i<\bar{\kappa}(p^0_i))\kappa_i}_{CS_i} - \underbrace{(\bar{\upsilon}-\tilde{p}_i)}_{\widetilde{CS}_i} \\
+& = [\tilde{c}_{i,b}- c_{i,b}] - (m_i-\tilde{m}_i) - 1(\kappa_i<\bar{\kappa}(p^0_i))\kappa_i
+& = \Delta V_i - \Delta m_i - 1(\kappa_i<\bar{\kappa}(p^0_i))\kappa_i
+\end{align}$$
+
 
 
