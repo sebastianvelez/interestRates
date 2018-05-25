@@ -418,11 +418,11 @@ Search costs sound like a lot but the represent just 2.5% of the cost of the con
 
 ### Counterfactuals: no search costs
 
-$$\begin{align}
+`\begin{align}
 \Delta CS_i & = \underbrace{\hat{\upsilon}-p_i-1(\kappa_i<\bar{\kappa}(p^0_i))\kappa_i}_{CS_i} - \underbrace{(\bar{\upsilon}-\tilde{p}_i)}_{\widetilde{CS}_i} \\
 & = [\tilde{c}_{i,b}- c_{i,b}] - (m_i-\tilde{m}_i) - 1(\kappa_i<\bar{\kappa}(p^0_i))\kappa_i
 & = \Delta V_i - \Delta m_i - 1(\kappa_i<\bar{\kappa}(p^0_i))\kappa_i
-\end{align}$$
+\end{align}$$`
 
 
 
