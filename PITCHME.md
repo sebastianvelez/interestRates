@@ -449,7 +449,32 @@ they label the three components *misallocation*, *discrimination* and *search co
 
 ![](https://i.imgur.com/aGNIPxw.png)
 
+
+
 ---
 
 
 
+
+### Distribution of margins
+
+![](https://i.imgur.com/TCpEfVG.png)
+
+
+
+
+---
+
+
+
+### First mover advantage and differentiation
+
+
+![](https://i.imgur.com/yMwuZut.png)
+
+
+
+---
+
+
+### 
