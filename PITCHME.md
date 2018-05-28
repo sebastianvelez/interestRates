@@ -258,7 +258,7 @@ $$Pr(\kappa < p^0 - E[p^*|p^0,s] - \lambda G_{(1)}(-\gamma)) \equiv H(\bar{\kapp
 
 Note:
 
-Where $1-G_{(1)}(\gamma)$ is the retention probabilty of the home bank.
+Where $1-G_{(1)}(\gamma)$ is the retention probability of the home bank.
 
 
 
@@ -278,7 +278,7 @@ $$\max_{p^0 \le \bar{p}}(p^0-c+\Delta)[1-H(\bar{\kappa}(p^0,s))]+H(\bar{\kappa}(
 
 Note:  
 
-There are 3 sources of profit: 1) search costs, 2) cost and quality differentiation, 3) reserve price effect. And the initial quote is additive in c in the interior. They have proofs on that and the corollary tha follows
+There are 3 sources of profit: 1) search costs, 2) cost and quality differentiation, 3) reserve price effect. And the initial quote is additive in c in the interior. They have proofs on that and the corollary that follows
 
 
 
@@ -288,7 +288,7 @@ There are 3 sources of profit: 1) search costs, 2) cost and quality differentiat
 
 1. Distribution of prices for loyals is a function of prices coming from searchers and non searchers
 2. Distribution of prices for switchers depends only on the outcome of the auction
-3. The switchin probability is a combo of
+3. The switching probability is a combo of
     + consumers rejecting initial offer
     + banks losing the auction
 
@@ -308,7 +308,7 @@ Not enough variation
 
 
 Note:
-1. No problem observing just switchers because as prices go up transactions are generated in the auction state. Markets with different $n$ can be used to identify separately $F(c_i|x_i)$,  $G(\omega_i)$ and $\gamma=\Delta+\lambda$. For instance if n=2, $p_i^* = c_i+\gamma$ from where  $F(c_i|x_i)$ can be identified given $\gamma$. For small numbers $n >2$ given the high loyalty, switchers parice reflects mostly cost (which is independent of $c$). For large numbers the correlation between the number of rivals and price paid by switchers depends on the loyalty parameter. Really large n arguments are just English auction. 
+1. No problem observing just switchers because as prices go up transactions are generated in the auction state. Markets with different $n$ can be used to identify separately $F(c_i|x_i)$,  $G(\omega_i)$ and $\gamma=\Delta+\lambda$. For instance if n=2, $p_i^* = c_i+\gamma$ from where  $F(c_i|x_i)$ can be identified given $\gamma$. For small numbers $n >2$ given the high loyalty, switchers price reflects mostly cost (which is independent of $c$). For large numbers the correlation between the number of rivals and price paid by switchers depends on the loyalty parameter. Really large n arguments are just English auction. 
 2. $\lambda$ and $\gamma$ have different effects on average transaction price for loyal consumers but the same for probability of search in the interior and distribution of price for switchers.
 
 
@@ -342,7 +342,7 @@ $$\max_\theta \sum_i \text{log} L(p_i, b_i|\mathcal{I}_i,\theta)-m(\theta)^T\hat
     - `$\Delta(z_i^2)=L_i \times (\Delta_0 + \Delta_{inc}\text{Income}_i+ \Delta_{owner}\text{Previous Owner}_i)$`
     - `$\lambda(z_i^2)=L_i \times (\lambda + \lambda{inc}\text{Income}_i+ \lambda{owner}\text{Previous Owner}_i)$`
     
-Similary for the search cost distribution
+Similarly for the search cost distribution
 
 ---
 
@@ -399,7 +399,7 @@ Consistent with notion that lending cost function captures complementarity betwe
 
 ### Search cost distribution
 
-- Search costs are increasing in income and prior-onwership status
+- Search costs are increasing in income and prior-ownership status
 
 - New home-buyers have lower search costs and a 1% increase in income leads to a 0.4% increase in search cost.
 
@@ -407,6 +407,7 @@ Consistent with notion that lending cost function captures complementarity betwe
 
 
 Note:
+
 Consistent with the interpretation of costs depending on cost time of collecting multiple quotes.
 
 Search costs sound like a lot but the represent just 2.5% of the cost of the contract (but are in general much lower than those in search literature)
@@ -416,9 +417,9 @@ Search costs sound like a lot but the represent just 2.5% of the cost of the con
 
 ### Counterfactuals: Search cost or market power
 
-- Use the model to quanitfy the effect of either in consumer surplus and firms profits
+- Use the model to quantify the effect of either in consumer surplus and firms profits
 - Compute equilibrium without search costs
-    + direct burden of searching quoutes
+    + direct burden of searching quotes
     + misallocation
     + price discrimination
 
@@ -438,13 +439,14 @@ Search costs sound like a lot but the represent just 2.5% of the cost of the con
 
 
 Note:  
+
 they label the three components *misallocation*, *discrimination* and *search cost*. *Misallocation* and *search cost* account for loss induced by search friction. 
 
 
 
 --- 
 
-### Decomposition of effects of search costs
+### Search costs decomposed
 
 
 ![](https://i.imgur.com/aGNIPxw.png)
@@ -467,7 +469,21 @@ they label the three components *misallocation*, *discrimination* and *search co
 
 
 
-### First mover advantage and differentiation
+### Incumbency advantage
+
+- What is the relative importance of the first mover advantage and differentiation>
+    - CF1: cost advantage of home bank set to zero
+    - CF2: eliminate ability of screening high-search cost customers
+    - CF3: both
+
+
+Note:
+
+CF1 is analogous to separating provision of mortgages and other banking services. CF2 is done by imposing uniform matching probabilities.
+
+---
+
+### Components
 
 
 ![](https://i.imgur.com/yMwuZut.png)
