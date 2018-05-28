@@ -132,6 +132,12 @@ Ipsos-Reid data contains micro-data on 12,000 households. Consumer base proxies 
 
 ![](https://i.imgur.com/UDggSos.png)
 
+
+Note:
+
+Sample size= 26,218. Oct 2009-oct 2012.
+Average loan size 136K.
+
 ---
 
 
@@ -160,13 +166,18 @@ Note:
 
 ### The Model
 
+
+
+
 - Consumers make a discrete choice
+
+
 
 $$\max_{j \in \mathcal{J}}\upsilon_j - p_j$$
 
 where $\upsilon_j$ is the WTP for bank $j$, $p_j$ is a monthly payment.
 
-- Consumers get quotes from home bank ($n$) or one of the $n$ lenders in $\mathcal{N}$
+- Consumers get quotes from home bank ($h$) or one of the $n$ lenders in $\mathcal{N}$
 
 - Consumers incur a cost $\kappa > 0$ when getting quotes outside $h$ (independent of # of quotes)
 
@@ -197,6 +208,7 @@ Note:
 
 The idiosyncratic component is distributed $G()$ with $E(\omega_j)=0$. Lenders are constrained by a common posted price $\bar{p}$ which determines the reservation price of consumers($\bar{\upsilon}>\bar{p}$) and whether or not they qualify for a loan ($\bar{p}>c_j$)
 
+The home-bank loyalty advantage is the sum $\Delta + \lambda = \gamma$
 
 
 ---
