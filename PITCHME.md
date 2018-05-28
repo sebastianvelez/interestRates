@@ -7,7 +7,7 @@
 
 - **Negotiated-price markets**
     - Sellers post prices, but actual transaction prices are achieved via bargaining (cars, health insurance, capital assets, B2B)
-    - Key features: *search frictions* (cost of gather quotes), *loyatly advantage* (switching cost, complementarities, etc).
+    - Key features: *search frictions* (cost of gather quotes), *loyalty advantage* (switching cost, complementarities, etc).
     
 Note:
 Both things have implications for market power. **Search costs** lead to PD (first seller has almost monopoly power if high costs of search) and **brand loyalty** reduces (bargaining because incumbents provide higher value thus lock-in happens). Together they imply that the firm with an extensive consumer base has an **incumbency advantage** over rival firms in the same market.
@@ -46,7 +46,7 @@ Note:
 ### Consumer surplus loss
 
 Counterfactual experiments eliminate search costs. Loss ($12/month) stems from 3 sources:
-- missallocation of buyers and sellers (12%)
+- missallocation of buyers and sellers (21%)
 - price discrimination (28%)
 - direct cost of gathering quotes (50%)
 
@@ -71,7 +71,7 @@ They also find that posting rates reduces the banks ability to price discriminat
 - 2 kinds of mortgage contracts:  
     - conventional
     - high loan-to-value ratio 
-- 2 insurers, same guidelines:a premium ranging from 1.75% to 3.75% the value of the loans
+- 2 insurers, same guidelines: a premium ranging from 1.75% to 3.75% the value of the loans
 - The large banks operate nationally and post weekly prices that are common across the country
 
 
@@ -104,7 +104,9 @@ Data provided by one of the insurers (CMHC) but they claim the contracts of the 
     - negotiated discounts: posted rate and transaction rate
     - loyalty: dummy if consumer has dealt with said bank
     
-    
+Note:
+
+Importantly since they do not observe number of quotes gathered, they use additional information from a survey of 841 persons who bought houses around the same period. They use the survey to construct auxiliary moments.
 
 ---
 
