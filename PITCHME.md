@@ -378,6 +378,15 @@ Consistent with notion that lending cost function captures complementarity betwe
 
 ### Results: cost advantage ($\Delta_i$)
 
+![](https://i.imgur.com/AX1EKrt.png)
+
+
+--- 
+
+
+
+### Results: cost advantage ($\Delta_i$)
+
 
 - Estimated to be $17 for a $100K loan
 - Confers the home bank a huge advantage (51% probability of being cheaper then the most efficient lender in $\mathcal{N}_i$)
@@ -385,6 +394,8 @@ Consistent with notion that lending cost function captures complementarity betwe
 
 
 --- 
+
+
 
 ### Search cost distribution
 
@@ -433,8 +444,10 @@ they label the three components *misallocation*, *discrimination* and *search co
 
 --- 
 
-###
+### Decomposition of effects of search costs
 
+
+![](https://i.imgur.com/aGNIPxw.png)
 
 ---
 
