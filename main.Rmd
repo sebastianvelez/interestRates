@@ -1,0 +1,124 @@
+---
+title: "Interest rate dispersion in commercial loans"
+author: '"SA Moreno, AR Vargas, JS Vélez"'
+date: "5 de septiembre de 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(knitr)
+read_chunk('main.R')
+```
+
+
+
+
+<!--
+  
+
+
+#### Propuesta á  la ACH (2013)
+1. Documentar la importancia de la dispersión (magnitud, cambio en el tiempo, relación con estructura de mercado, con fusiones, etc.). Para poder hablar de dispersión tenemos que estar muy seguros de que nos quedamos con créditos homogéneos.
+2. Identificar tipos de firmas que se benefician más de los descuentos de los bancos.
+3. Testear que tanto de la dispersión se debe a discriminación de precios. 
+
+--->
+
+
+```{r include=F}
+<<dataWrangling>>
+
+
+```
+
+
+#### Empirical strategy
+
+
+##### Boxplot
+
+The first thing we do is a boxplot that shows the cross-sectional dispersion of margins in commercial interest rates for every quarter in the data. We define margin as the difference between the interest rate negotiated at the start of the loan and the lender's opportunity cost. Below, we present the results obtained using the 5-year treasury bond rate as opportinity cost. However, rhe results are robust to several measures of opportunity cost (1 and 10-year treasury bond rate, the usury rate and the average certificate of deposit rate).The patterns of dispersion over time define three periods. 
+
+A first period, spanning over 4 years, that stars with the first quarter of the data, that is, the last quarter of 2005, and ends on the second quarter of 2009. This period is characterized by high dispersion (large ranges) manifested, mostly, through very low margins that lie very far from the median.[^1] A second period, going from 2009Q3 to 2011Q2 in which there is relatively low dispersion, as margins are always smaller, in absolute value, than 15%. Finally, after 2011Q3 there is a surge in dispersion, this time caused by unusually large margins. Overall, the figure reveals a steady increase in the amount of dispersion caused by unsually large margins.
+
+
+
+[^1]: We define range  as $Q3 +1.5\text{IQR} - [Q1-1.5\text{IQR}]$ where $Qi$ is a quartile and IQR is the inter-quartile range.
+
+
+```{r}
+
+<<boxplot>>
+  
+```
+
+
+##### Variance decomposition
+
+Next we want to study the importance of consumer-based pricing, that is, we want to quantify how much of the observed dispersion is due to the bank's ability to extract willingness to pay from the borrowers based on the borrower's observed characteristics. To do so we decompose the observed dispersion between four groups of covariates. In particular, we regress the margins $y_{i}$, defined as the negotiated rate minus the opportunity cost (IBC), on 4 groups of categorical variables $X$: quarter dummies, loan characteristics, firm characteristics and market characteristics. Quarter dummies account for the importance of variation in the IBC rate. The loan characateristics are term and loan size and whether or not the loan was issued by the the firm's home-bank.[^2] As firms' characteristics we include assets, credit score and sector. Finally, we include city dummies, a measure of market concentration and the size of the lender. The contiunous characterstics are discretized by percentiles 10th through 90th.
+
+[^2]: The definition of home-bank about here.
+
+**Commenting the table**:
+
+
+
+
+```{r, warnings=F}
+
+<<varianceDecomposition>>
+  
+```
+
+
+- At most the observed variables explain `r 100-round(min(tableanova[11,]),digits=2)*100`% of the variation which happens in `r colnames(tableanova[which(tableanova[11,]== min(tableanova[11,]))])`
+
+- Reassuringly, across all periods the most important variables in explaining the dispersion of interest rates are term and loan size, which jointly explain up to `r round(max(tableanova[2,]+tableanova[3,]),digits=2)*100`%. More over, they have become more important in explaining the interest rates.
+
+- The quarter dummies explain between `r round(min(tableanova[1,])*100,digits=2)`% and `r round(max(tableanova[1,]*100), digits=2)`%  of the dispersion. However, there is a clear fall in quarter-specific pricing between periods 1 and 3.
+
+- A seemingly suprising fact is that the credit score has very little to do with dispersion, moreover, at the end of the sample it explains a third of the explained variation in the begining. This is explained because the vast majority (x%) of credits get the highest score.
+
+- As expected the portion of dispersion explained by city dummies remains constant ovser time.
+
+- Concentration measures do not explain the dispersion (we tried 3 alternate measure of HHI: loans, #credits, #branches), however, the raw size of the lender, measured as number of branches, is capable of explaining between `r round(min(tableanova[10,])*100,digits=2)`% and `r round(max(tableanova[10,]*100), digits=2)`%  of the dispersion. It is worthwile mentioning that its importances halfed by the end of the sample.
+
+
+
+
+
+##### Who has negosh?
+
+2. **Who receives the discounts?**: $\text{Margin}_i=X_i\beta+\varepsilon_i$, where $\text{Margin}_i$ is defined relative to the DTF  or something and $X_i$ is a set of observed and borrower characteristics. 
+
+```{r results='asis', warning=FALSE}
+
+<<negosh>>
+  
+```
+
+
+
+Findings so far (very preliminary and honestly look wrong)
+
+- Margins decline with
+    - loan size	$\times$
+    - assets $\checkmark$
+    - HHI $\times$
+    - term $\times$
+    - size of bank $\checkmark$
+    
+- Margins increases with
+    - Homebank $\checkmark$
+    - Empleados $\times$
+    
+
+
+
+
+3.  **Quantile regression** of transaction rate (or some kind of measure of profit margin) on market, firm and bank characteristics. Whatever's left is interpreted as price discrimination. 
+4. **Test**: Marginal effects of observable characteristics on rates should be close to zero for low rates (high negosh) than for medium rates (medium negosh).
+
+
+
