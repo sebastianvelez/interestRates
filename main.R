@@ -1,8 +1,18 @@
 
 
-## ---- dataWrangling ----
-
+## ---- libraries ----
 library(dplyr)
+library(ggplot2)
+library(kableExtra, quietly = TRUE)
+suppressMessages(library(lmtest))
+suppressMessages(library(sandwich))
+suppressMessages(library(stargazer))
+library(quantreg)
+library(tidyr)
+library(gridExtra)
+
+
+## ---- dataWrangling ----
 
 setwd(dir = 'C:/Users/jvelezve/Documents/interest rates')
 mainDf <- read.csv("\\\\CALI1183058\\velez\\subdata_loans.csv", header=T)
@@ -96,7 +106,7 @@ mainDf$size_dummies <- cut(x=mainDf$sizebank, breaks = size_cutoffs)
 ## ---- boxplot
 
 ## we need to remove the cycle (DTF or tasa de intervención)
-library(ggplot2)
+
 
 df <- mainDf %>%
   group_by(quarter) %>%
@@ -119,7 +129,6 @@ p
 
 ## ---- varianceDecomposition ----
 
-library(kableExtra, quietly = TRUE)
 
 myFormula <- 'margen ~ quarter +
                        term_dummies + loan_dummies + dummy_home_bank +
@@ -127,32 +136,6 @@ myFormula <- 'margen ~ quarter +
                        city_dummies + mktCred_dummies + size_dummies'
 
 myRegDummies <- lm(myFormula, mainDf)
-
-# myRegDummiesCoef <- summary(myRegDummies)$coefficients
-# 
-# 
-# sdcii <- sd( myRegDummiesCoef[grep('^cii',rownames(myRegDummiesCoef)),1])
-# sdcal <- sd( myRegDummiesCoef[grep('^cal',rownames(myRegDummiesCoef)),1])
-# sdquarter <- sd( myRegDummiesCoef[grep('^qua',rownames(myRegDummiesCoef)),1])
-# sdTerms <- sd( myRegDummiesCoef[grep('^ter',rownames(myRegDummiesCoef)),1])
-# sdAssets <- sd( myRegDummiesCoef[grep('^ass',rownames(myRegDummiesCoef)),1])
-# sdCities <- sd( myRegDummiesCoef[grep('^cit',rownames(myRegDummiesCoef)),1])
-# sdLoans <- sd( myRegDummiesCoef[grep('^loa',rownames(myRegDummiesCoef)),1])
-# 
-# GroupDevs <- c(sdquarter,sdTerms,sdAssets,sdcal,sdLoans,sdCities,sdcii)
-# 
-# myAno <- anova(myRegDummies)
-# 
-# sse <- sum(myAno$`Sum Sq`)
-# 
-# varDecTab <- myAno[1:7,2,drop=F]/sse
-# varDecTab <- cbind(varDecTab,GroupDevs/10)
-# 
-# colnames(varDecTab) <- c('Desc.Varianza', 'Desv.Est. Grupo')
-# 
-# 
-# kable(varDecTab, booktabs=T, caption = 'Descomposición de Varianza', digits = 3) %>%
-#   kable_styling(latex_options = "striped")
 
 
 results <-NULL
@@ -212,21 +195,19 @@ rownames(tableanovaGroups) <- c('Quarter','Loan Characteristics','Borrower Chara
 
 colnames(tableanovaGroups) <- paste('Period', 1:3)
 
-kable(tableanovaGroups, booktabs=T, caption = 'Variance decomposition (Grouped', digits = 3) %>%
+kable(tableanovaGroups, booktabs=T, caption = 'Variance decomposition (Grouped)', digits = 3) %>%
   kable_styling(latex_options = "striped")
 
 
 
 ## ---- negosh ----
 
-suppressMessages(library(lmtest))
-suppressMessages(library(sandwich))
-suppressMessages(library(stargazer))
-
 mainDf$logsaldo_de_credito <- log(mainDf$saldo_de_credito)
 mainDf$logingresos_operacionales_m <- log(mainDf$ingresos_operacionales_m+1)
 mainDf$logobligaciones_financieras_m <- log(mainDf$obligaciones_financieras_m+1)
 mainDf$logempleados <- log(mainDf$empleados)
+mainDf$logsizebank  <- log(mainDf$sizebank)
+mainDf$hhi_oficinas1000 <- mainDf$hhi_oficinas*1000
 
 
 #todos los efectos fijos
@@ -239,10 +220,10 @@ marginFormula4 <- 'margen ~ quarter +
                             cod_ciudad +
                             logobligaciones_financieras_m +
                             calificacion +
-                            hhi_oficinas +
+                            hhi_oficinas1000 +
                             ciiu2d +
-                            empleados +
-                            sizebank'
+                            logempleados +
+                            logsizebank'
 
 # trimestre, sector
 marginFormula3 <- 'margen ~ quarter +
@@ -253,10 +234,10 @@ marginFormula3 <- 'margen ~ quarter +
                             logingresos_operacionales_m + 
                             logobligaciones_financieras_m +
                             calificacion +
-                            hhi_oficinas +
+                            hhi_oficinas1000 +
                             ciiu2d +
-                            empleados +
-                            sizebank'
+                            logempleados +
+                            logsizebank'
 
 # trimestre
 marginFormula2 <- 'margen ~ quarter +
@@ -267,9 +248,9 @@ marginFormula2 <- 'margen ~ quarter +
                             logingresos_operacionales_m + 
                             logobligaciones_financieras_m +
                             calificacion +
-                            hhi_oficinas +
-                            empleados +
-                            sizebank'
+                            hhi_oficinas1000 +
+                            logempleados +
+                            logsizebank'
 
 # trimestre
 marginFormula1 <- 'margen ~ duracion_meses +
@@ -279,9 +260,9 @@ marginFormula1 <- 'margen ~ duracion_meses +
                             logingresos_operacionales_m + 
                             logobligaciones_financieras_m +
                             calificacion +
-                            hhi_oficinas +
-                            empleados +
-                            sizebank'
+                            hhi_oficinas1000 +
+                            logempleados +
+                            logsizebank'
 
 marginReg4 <- lm(marginFormula4, mainDf)
 marginReg3 <- lm(marginFormula3, mainDf)
@@ -291,14 +272,137 @@ marginReg1 <- lm(marginFormula1, mainDf)
 
 
 stargazer(marginReg1, marginReg2, marginReg3, marginReg4, header=FALSE, type='latex', omit = c('quarter','cod_ciudad','ciiu2d'),
-          covariate.labels = c('Loan term','Loan amount', 'Home bank', 'Productivity','Revenue (log)', 'Debt (log)', 'Credit score B',
-                               'Credit score C', 'Credit score D', 'Credit score E','HHI','Employees', 'Bank Size'),
+          covariate.labels = c('Term (months)','Amount (log)', 'Home bank', 'Productivity','Revenue (log)', 'Debt (log)', 'Credit score B',
+                               'Credit score C', 'Credit score D', 'Credit score E','HHI','Employees (log)', 'Bank Size (log)'),
           column.labels = 'Margin',
           add.lines = list(c('Quarter FE', 'No', 'Yes', 'Yes', 'Yes'), c('City FE', 'No', 'No', 'No', 'Yes'), c('Sector FE','No', 'No', 'Yes', 'Yes')),
           omit.stat=c("f", "ser")
           )
 
 
+# summary(lm(marginFormula4, mainDf[mainDf$duracion_dias==0,])) regression with subsample of same day loans. 
+
+
+
+
+## ---- quantreg ----
+
+
+laformula <- 'margen ~ quarter +
+                       duracion_meses +
+                       logsaldo_de_credito +
+                       dummy_home_bank +
+                       omega_acf_sample + 
+                       logingresos_operacionales_m + 
+                       logobligaciones_financieras_m +
+                       calificacion +
+                       hhi_oficinas1000 +
+                       logempleados +
+                       logsizebank'
+cuartiles <- 1:9/10
+
+QRmarginTermAmount <- rq(laformula, mainDf, tau=cuartiles)
+
+
+plots <- NULL
+
+vars <- c('dummy_home_bank',
+          'duracion_meses',
+          'omega_acf_sample',
+          'hhi_oficinas1000',
+          'logsaldo_de_credito',
+          'logingresos_operacionales_m',
+          'logobligaciones_financieras_m',
+          'logempleados',
+          'logsizebank')
+
+
+plots <- NULL
+
+for( i in 1:9){
+    invisible(plots[[i]] <- plot(summary(QRmarginTermAmount), parm=vars[i]))
+  
+}
+
+
+mylist <-NULL
+
+
+for (i in 1:9){
+  
+  mylist[[i]] <- as.data.frame.table(plots[[i]])
+  
+}
+
+
+
+# tidying dataset to plot handsome plot
+library(tidyr)
+
+bigdata <- do.call(rbind,mylist) %>%
+  spread(.,Var2,Freq) %>% 
+  group_by(Var1) %>%
+  mutate(
+    olsEstimate = last(coefficients),
+    olsLB = last(`lower bd`),
+    olsUB = last(`upper bd`)) %>%
+  ungroup() %>%
+  # mutate( x =  as.numeric(gsub('tau= ','',Var3))) %>%
+  filter(Var3!='ols')
+
+bigdata$cuantiles <- as.numeric(
+  gsub('tau= ','', bigdata$Var3)
+)
+
+
+
+dfs <- NULL
+
+for (i in 1:9) {
+  dfs[[i]] <- filter(bigdata, Var1 == vars[i])
+  
+}
+
+nombres <- c('Home-bank',
+             'Term (months)',
+             'Productivity',
+             'HHI',
+             'Amount (log)',
+             'Revenue (log)',
+             'Debt (log)',
+             'Employees (log)',
+             'Size (branches)')
+
+
+plotes <- NULL
+
+
+for (i in 1:9) {
+  
+  plotes[[i]] <- ggplot(dfs[[i]],aes(x = cuantiles, y=coefficients)) +
+    geom_point() + geom_line(group=1) + 
+    geom_ribbon(aes(ymin=`lower bd`, ymax=`upper bd`), linetype=2, alpha=.3) + 
+    scale_x_continuous(breaks = seq(0.1, 0.9, by = 0.1)) +
+    ggtitle(nombres[i])+ 
+    geom_line(aes(y=olsEstimate))+ 
+    geom_ribbon(aes(ymin=olsLB, ymax=olsUB), linetype=1, alpha=.2) + 
+    labs(x= 'Quantile', y='Estimate') + theme_light()
+  
+}
+
+
+suppressPackageStartupMessages(library(gridExtra))
+
+grid.arrange(plotes[[1]],
+             plotes[[2]],
+             plotes[[3]],
+             plotes[[4]],
+             plotes[[5]],
+             plotes[[6]],
+             plotes[[7]],
+             plotes[[8]],
+             plotes[[9]])
+             
 
 
 
@@ -307,11 +411,9 @@ stargazer(marginReg1, marginReg2, marginReg3, marginReg4, header=FALSE, type='la
 
 
 
-
-
-
-
-
+# this shit takes forever
+# marginQreg <- rq(marginFormula4,mainDf, tau=c(.25,.5,.75))
+# summary.rq(marginQreg, se = 'boot')  
 
 
 
